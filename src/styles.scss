@@ -1,0 +1,53 @@
+
+
+/* You can add global styles to this file, and also import other style files */
+html,body{
+  min-height: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+.container {
+    
+  .header-label{
+    color:yellow;
+  }
+
+  border: 1px solid grey;  
+
+  .menu {    
+    .menu-header{    
+        background-color: #0a2985;        
+    }
+    .menu-content{
+        background-color: #002db3;
+    }
+  }
+
+  .content{
+      background-color: white;
+      .content-1 {        
+        .content-1-header{
+            background-color: #0a7e57;
+        }
+        .content-1-content{
+            padding: 20px;
+        }
+      }
+      .content-2 {        
+        .content-2-header{
+            background-color: #043d92;
+        }
+        .content-2-content{
+            background-color: #095edd;
+        }
+      }
+  }
+
+  .right-banner{
+    background-color: black;
+  }
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
