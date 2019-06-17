@@ -24,11 +24,11 @@
       </div>
       <div class="menu" fxFlex="50" fxLayout="row" fxLayoutAlign="start">
 
-        <button mat-button>Home</button>
-        <button mat-button [matMenuTriggerFor]="menu">Customers</button>
+        <button mat-button [routerLink]="['home']" [routerLinkActive]="['activado']">Home</button>
+        <button mat-button [matMenuTriggerFor]="menu">Vehiculo</button>
         <mat-menu #menu="matMenu" class="menu-con">
-          <button mat-menu-item>Customers Add</button>
-          <button mat-menu-item>Customers List</button>
+          <button mat-menu-item>Adicionar Vehiculo</button>
+          <button mat-menu-item>Listar Vehiculo</button>
         </mat-menu>
 
       </div>
@@ -36,8 +36,8 @@
   </div>
 
   <div class="content" fxFlex="70" fxLayout="row" fxLayoutAlign="center">
-
-
+    <router-outlet>
+      </router-outlet>
   </div>
   <div class="footer" fxFlex="5" fxLayout="row" id="footer" fxLayoutAlign="center">
 
